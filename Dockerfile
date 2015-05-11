@@ -14,6 +14,7 @@ COPY thunder /app/
 COPY start.sh /app/
 VOLUME /app/TDDOWNLOAD
 
+EXPOSE 9000
 WORKDIR /app
 RUN chmod +x start.sh
 CMD ["./start.sh"]
